@@ -72,7 +72,7 @@ const ticker = () => {
       pomodoroCounter++;
       pomodoroIndicator.innerText = pomodoroCounter;
     }
-  }, 500);
+  }, 1000);
 };
 
 const clear = () => {
