@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.main {
+  font-size: 75px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 0.5rem;
+  position: relative;
+}
+.button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  margin-top: 3rem;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pomodoro {
+  position: absolute;
+  font-size: x-large;
+  right: 7.5%;
+  top: 7.5%;
+  cursor: pointer;
+}
+
+.break {
+  position: absolute;
+  font-size: x-large;
+  top: 7.5%;
+  left: 43%;
+  visibility: hidden;
+}
+
+.minutes,
+.seconds {
+  letter-spacing: 0.2rem;
+  padding: 0.5rem;
+  display: inline-block;
+  width: 200px;
+}
+
+@keyframes color_change {
+  from {
+    color: #fff;
+  }
+  to {
+    color: black;
+  }
+}
